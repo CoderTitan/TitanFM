@@ -1,0 +1,55 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - MainMoudle (0.3.0):
+    - TitanFMBase/Category
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
+  - TitanFMBase (0.2.0):
+    - TitanFMBase/Base (= 0.2.0)
+    - TitanFMBase/Category (= 0.2.0)
+    - TitanFMBase/Network (= 0.2.0)
+    - TitanFMBase/Tools (= 0.2.0)
+  - TitanFMBase/Base (0.2.0)
+  - TitanFMBase/Category (0.2.0)
+  - TitanFMBase/Network (0.2.0):
+    - AFNetworking
+    - SDWebImage
+    - TitanFMBase/Category
+  - TitanFMBase/Tools (0.2.0)
+
+DEPENDENCIES:
+  - MainMoudle
+  - TitanFMBase
+
+SPEC REPOS:
+  https://git.coding.net/CoderTitan/TitanjunSpec.git:
+    - MainMoudle
+    - TitanFMBase
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  MainMoudle: 8143b0d765977a2a0a0d7513bff9ee89e47f01ef
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  TitanFMBase: 434d594ff8f6cdf9f1fd756114bde322308e2ff3
+
+PODFILE CHECKSUM: 86b044e974ed424076f04c762566249da5606a34
+
+COCOAPODS: 1.5.3

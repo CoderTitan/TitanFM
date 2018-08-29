@@ -1,0 +1,32 @@
+
+source 'https://git.coding.net/CoderTitan/TitanjunSpec.git'
+source 'https://github.com/CocoaPods/Specs.git'  #官方仓库的地址
+
+
+platform :ios, '9.0'
+
+target 'TitanjunFM' do
+
+  use_frameworks!
+
+  pod 'TitanFMBase'
+  pod 'MainMoudle'
+
+
+
+
+
+
+
+
+  target 'TitanjunFMTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'TitanjunFMUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

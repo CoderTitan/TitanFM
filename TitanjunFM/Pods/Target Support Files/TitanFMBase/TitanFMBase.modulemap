@@ -1,0 +1,6 @@
+framework module TitanFMBase {
+  umbrella header "TitanFMBase-umbrella.h"
+
+  export *
+  module * { export * }
+}
