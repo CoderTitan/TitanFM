@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - MainMoudle (0.3.0):
+  - MainMoudle (0.3.1):
     - TitanFMBase/Category
   - SDWebImage (4.4.1):
     - SDWebImage/Core (= 4.4.1)
@@ -46,7 +46,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  MainMoudle: 8143b0d765977a2a0a0d7513bff9ee89e47f01ef
+  MainMoudle: f94e525342b01cd8c3b8e33d16685442183d0c83
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
   TitanFMBase: 434d594ff8f6cdf9f1fd756114bde322308e2ff3
 

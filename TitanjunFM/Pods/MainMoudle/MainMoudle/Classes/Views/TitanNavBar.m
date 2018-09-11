@@ -16,12 +16,16 @@
  *  @param globalImg 全局导航栏背景图片
  */
 + (void)setGlobalBackGroundImage: (UIImage *)globalImg {
-    
-    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[NSClassFromString(@"TitanNavigationController")]];
+    UINavigationBar *navBar = [[UINavigationBar alloc]init];
+    if (@available(iOS 9.0, *)) {
+        navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[NSClassFromString(@"TitanNavigationController")]];
+    } else {
+        navBar = [UINavigationBar appearanceWhenContainedIn:NSClassFromString(@"TitanNavigationController"), nil];
+    }
     [navBar setBackgroundImage:globalImg forBarMetrics:UIBarMetricsDefault];
-    
-    
 }
+
+
 /**
  *  设置全局导航栏标题颜色
  *
@@ -35,7 +39,13 @@
     if (fontSize < 6 || fontSize > 40) {
         fontSize = 16;
     }
-    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[NSClassFromString(@"TitanNavigationController")]];
+    
+    UINavigationBar *navBar = [[UINavigationBar alloc]init];
+    if (@available(iOS 9.0, *)) {
+        navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[NSClassFromString(@"TitanNavigationController")]];
+    } else {
+        navBar = [UINavigationBar appearanceWhenContainedIn:NSClassFromString(@"TitanNavigationController"), nil];
+    }
     // 设置导航栏颜色
     NSDictionary *titleDic = @{
                                NSForegroundColorAttributeName: globalTextColor,
