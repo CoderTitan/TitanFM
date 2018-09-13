@@ -22,4 +22,12 @@
 
 @property (nonatomic, assign) CGFloat centerY;
 
+
+/**
+ *  返回当前视图, 所处的控制器
+ *
+ *  @return 控制器
+ */
+- (UIViewController *)currentViewController;
+
 @end

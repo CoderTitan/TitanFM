@@ -17,7 +17,7 @@
 
 
 @interface TitanTabBar()
-@property (nonatomic, weak) TitanMiddleView *middleView;
+//@property (nonatomic, strong) UIWindow *middleWindow;
 
 @end
 
@@ -48,7 +48,6 @@
 
 
 - (void)setUpInit {
-    
     // 设置样式, 去除tabbar上面的黑线
     self.barStyle = UIBarStyleBlack;
     
@@ -62,22 +61,17 @@
     CGFloat width = 65;
     CGFloat height = 65;
     self.middleView.frame = CGRectMake((kScreenWidth - width) * 0.5, (kScreenHeight - height), width, height);
-    
 }
 
 
 -(void)setMiddleClickBlock:(void (^)(BOOL))middleClickBlock {
+    _middleClickBlock = middleClickBlock;
     self.middleView.middleClickBlock = middleClickBlock;
 }
 
 
 -(void)layoutSubviews {
     [super layoutSubviews];
-    
-    // 将中间按钮, 移动到顶部
-    //    UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    //    [window.rootViewController.view bringSubviewToFront:self.middleBtn];
-    
     
     NSInteger count = self.items.count;
     
@@ -105,14 +99,11 @@
     
     self.middleView.centerX = self.frame.size.width * 0.5;
     self.middleView.y = self.height - self.middleView.height;
-    
 }
 
 
 
--(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
-{
-    
+-(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
     // 设置允许交互的区域
     // 1. 转换点击在tabbar上的坐标点, 到中间按钮上
     CGPoint pointInMiddleBtn = [self convertPoint:point toView:self.middleView];

@@ -88,7 +88,6 @@ static TitanMiddleView *_shareInstance;
     if (self.middleClickBlock) {
         self.middleClickBlock(self.isPlaying);
     }
-    
 }
 
 

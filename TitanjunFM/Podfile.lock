@@ -14,42 +14,68 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - MainMoudle (0.3.1):
+  - DownLoadListen (0.1.2):
+    - MJExtension
+    - SDWebImage
+    - TitanFMBase
+    - TKDownloadPlayer
+    - TKSegmentBar
+    - TKSqliteTool
+  - MainMoudle (0.3.3):
     - TitanFMBase/Category
-  - SDWebImage (4.4.1):
-    - SDWebImage/Core (= 4.4.1)
-  - SDWebImage/Core (4.4.1)
-  - TitanFMBase (0.2.0):
-    - TitanFMBase/Base (= 0.2.0)
-    - TitanFMBase/Category (= 0.2.0)
-    - TitanFMBase/Network (= 0.2.0)
-    - TitanFMBase/Tools (= 0.2.0)
-  - TitanFMBase/Base (0.2.0)
-  - TitanFMBase/Category (0.2.0)
-  - TitanFMBase/Network (0.2.0):
+  - MJExtension (3.0.15.1)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - TitanFMBase (0.2.1):
+    - TitanFMBase/Base (= 0.2.1)
+    - TitanFMBase/Category (= 0.2.1)
+    - TitanFMBase/Network (= 0.2.1)
+    - TitanFMBase/Tools (= 0.2.1)
+  - TitanFMBase/Base (0.2.1)
+  - TitanFMBase/Category (0.2.1)
+  - TitanFMBase/Network (0.2.1):
     - AFNetworking
     - SDWebImage
     - TitanFMBase/Category
-  - TitanFMBase/Tools (0.2.0)
+  - TitanFMBase/Tools (0.2.1)
+  - TKDownloadPlayer (0.2.2):
+    - TKDownloadPlayer/TKDownload (= 0.2.2)
+    - TKDownloadPlayer/TKRemotePlayer (= 0.2.2)
+  - TKDownloadPlayer/TKDownload (0.2.2)
+  - TKDownloadPlayer/TKRemotePlayer (0.2.2)
+  - TKSegmentBar (0.1.2):
+    - TitanFMBase/Category
+  - TKSqliteTool (0.3.1)
 
 DEPENDENCIES:
+  - DownLoadListen
   - MainMoudle
-  - TitanFMBase
 
 SPEC REPOS:
   https://git.coding.net/CoderTitan/TitanjunSpec.git:
+    - DownLoadListen
     - MainMoudle
     - TitanFMBase
+    - TKDownloadPlayer
+    - TKSegmentBar
+    - TKSqliteTool
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - MJExtension
     - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  MainMoudle: f94e525342b01cd8c3b8e33d16685442183d0c83
-  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
-  TitanFMBase: 434d594ff8f6cdf9f1fd756114bde322308e2ff3
+  DownLoadListen: 4e64edf6cc6dffcc7f8c3cc346472b7877af1132
+  MainMoudle: e19a7cb858131ade55aa1161b5dcf6840069b0b0
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  TitanFMBase: bedc2b6a2a7bfa144d13e62650b25187b4ba52b3
+  TKDownloadPlayer: f1f4eb74020215f0a8365289dc7e051fcaba9597
+  TKSegmentBar: fc97658226ff26dfcb781fd4bead1a6b1433e63a
+  TKSqliteTool: 04a4d9db0a66005fcbcb7cac8898c721118a4e78
 
-PODFILE CHECKSUM: 86b044e974ed424076f04c762566249da5606a34
+PODFILE CHECKSUM: e96e005d750d2ec22bd672fe61f193d16eb5dc70
 
 COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+framework module TKSegmentBar {
+  umbrella header "TKSegmentBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

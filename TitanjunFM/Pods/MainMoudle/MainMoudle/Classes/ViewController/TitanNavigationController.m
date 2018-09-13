@@ -28,7 +28,6 @@
     
     // 设置手势代理
     UIGestureRecognizer *gester = self.interactivePopGestureRecognizer;
-    //    gester.delegate = self;
     
     // 自定义手势
     // 手势加在谁身上, 手势执行谁的什么方法
@@ -38,14 +37,11 @@
     
     gester.delaysTouchesBegan = YES;
     panGester.delegate = self;
-    
-    
 }
 
 - (void)back {
     
     [self popViewControllerAnimated:YES];
-    
 }
 
 
@@ -90,10 +86,7 @@
         frame.origin.y = screenSize.height - 65;
         middleView.frame = frame;
         [viewController.view addSubview:middleView];
-        
     }
-    
-    
 }
 
 
@@ -101,7 +94,6 @@
 #pragma mark - UIGestureRecognizerDelegate
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-    
     // 如果根控制器也要返回手势有效, 就会造成假死状态
     // 所以, 需要过滤根控制器
     if(self.childViewControllers.count == 1) {
@@ -109,7 +101,6 @@
     }
     
     return YES;
-    
 }
 
 @end

@@ -9,9 +9,9 @@ target 'TitanjunFM' do
 
   use_frameworks!
 
-  pod 'TitanFMBase'
+  
   pod 'MainMoudle'
-
+  pod 'DownLoadListen'
 
 
 

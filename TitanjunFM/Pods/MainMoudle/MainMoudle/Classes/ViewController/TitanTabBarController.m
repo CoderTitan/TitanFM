@@ -69,11 +69,9 @@
     }else {
         [self addChildViewController:vc];
     }
-    
 }
 
-- (void)setSelectedIndex:(NSUInteger)selectedIndex
-{
+- (void)setSelectedIndex:(NSUInteger)selectedIndex {
     [super setSelectedIndex:selectedIndex];
     
     UIViewController *vc = self.childViewControllers[selectedIndex];

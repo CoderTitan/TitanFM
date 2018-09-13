@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class TitanMiddleView;
 @interface TitanTabBar : UITabBar
 
-
+@property (nonatomic, weak) TitanMiddleView *middleView;
 /**
  点击中间按钮的执行代码块
  */
