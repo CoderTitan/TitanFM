@@ -93,7 +93,7 @@
                                 <state key="normal" title=" 开始下载" image="DownLoadListen.bundle/sound_downloading">
                                     <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <state key="selected" title=" 暂停下载" image="paused"/>
+                                <state key="selected" title=" 暂停下载" image="DownLoadListen.bundle/paused"/>
                                 <connections>
                                     <action selector="downLoadOrPause:" destination="uVB-pE-pkt" eventType="touchUpInside" id="gI5-Yn-37m"/>
                                 </connections>
@@ -107,7 +107,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" progressImage="sound_progress_h" trackImage="sound_progress_n" translatesAutoresizingMaskIntoConstraints="NO" id="72O-kf-aPo">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" progressImage="DownLoadListen.bundle/sound_progress_h" trackImage="DownLoadListen.bundle/sound_progress_n" translatesAutoresizingMaskIntoConstraints="NO" id="72O-kf-aPo">
                                 <rect key="frame" x="80" y="9" width="160" height="2"/>
                             </progressView>
                         </subviews>
@@ -170,11 +170,11 @@
         <image name="DownLoadListen.bundle/cell_sound_play_n" width="16" height="16"/>
         <image name="DownLoadListen.bundle/deleteCell_h" width="16" height="16"/>
         <image name="DownLoadListen.bundle/find_albumcell_play" width="16" height="16"/>
+        <image name="DownLoadListen.bundle/paused" width="16" height="16"/>
         <image name="DownLoadListen.bundle/sound_comments" width="16" height="16"/>
         <image name="DownLoadListen.bundle/sound_downloading" width="16" height="16"/>
         <image name="DownLoadListen.bundle/sound_duration" width="16" height="16"/>
-        <image name="paused" width="11" height="11"/>
-        <image name="sound_progress_h" width="185" height="5"/>
-        <image name="sound_progress_n" width="185" height="5"/>
+        <image name="DownLoadListen.bundle/sound_progress_h" width="16" height="16"/>
+        <image name="DownLoadListen.bundle/sound_progress_n" width="16" height="16"/>
     </resources>
 </document>

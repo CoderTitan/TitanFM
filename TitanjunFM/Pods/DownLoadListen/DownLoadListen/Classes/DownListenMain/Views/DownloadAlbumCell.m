@@ -31,8 +31,8 @@ static NSString *const cellID = @"downLoadAlbum";
 
 
 - (IBAction)removeModel:(id)sender {
-    if (self.selectBlock) {
-        self.selectBlock();
+    if (self.deleteBlock) {
+        self.deleteBlock();
     }
 }
 

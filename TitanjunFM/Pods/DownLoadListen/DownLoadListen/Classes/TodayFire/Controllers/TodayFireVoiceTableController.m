@@ -35,9 +35,8 @@
     [super viewDidLoad];
     
     self.tableView.rowHeight = 80;
+    
     __weak typeof(self) weakSelf = self;
-    
-    
     [[TodayFireViewModel shareInstance] getTodayFireVoiceMsWithKey:self.loadKey result:^(NSArray<DownloadVoiceModel *> *voiceArr) {
         NSMutableArray *cellModels = [NSMutableArray array];
         for (DownloadVoiceModel *model in voiceArr) {

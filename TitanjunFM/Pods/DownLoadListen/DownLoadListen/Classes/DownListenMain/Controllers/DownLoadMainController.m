@@ -34,6 +34,7 @@
     NSLog(@"%@", NSHomeDirectory());
     
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.view.backgroundColor = [UIColor whiteColor];
     
     self.segmentBarVC.segmentBar.frame = CGRectMake(0, 0, 300, 40);
     self.navigationItem.titleView = self.segmentBarVC.segmentBar;
@@ -52,7 +53,6 @@
     }];
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg_64"] forBarMetrics:UIBarMetricsDefault];
-
 }
 
 

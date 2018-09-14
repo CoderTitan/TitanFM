@@ -37,6 +37,7 @@
 #pragma mark - 私有方法
 - (void)setUpUI {
     self.title = @"今日最火";
+    self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.segContentVC.view.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     [self.view addSubview:self.segContentVC.view];
@@ -56,6 +57,9 @@
 - (TKSegmentController *)segContentVC {
     if (!_segContentVC) {
         TKSegmentController *contentVC = [[TKSegmentController alloc] init];
+        [contentVC.segmentBar updateWithConfig:^(TKSegmentConfig *config) {
+            config.segmentBarBackColor = [UIColor brownColor];
+        }];
         [self addChildViewController:contentVC];
         _segContentVC = contentVC;
     }

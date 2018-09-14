@@ -61,7 +61,7 @@
         
         //统一设置返回按钮
         NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
-        NSString *path = [currentBundle pathForResource:@"btn_back_n@2x.png" ofType:nil inDirectory:@"MainMoudle.bundle"];
+        NSString *path = [currentBundle pathForResource:@"back-icon@2x.png" ofType:nil inDirectory:@"MainMoudle.bundle"];
         UIImage *image = [UIImage imageWithContentsOfFile:path];
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:0 target:self action:@selector(back)];
         viewController.hidesBottomBarWhenPushed = YES;
