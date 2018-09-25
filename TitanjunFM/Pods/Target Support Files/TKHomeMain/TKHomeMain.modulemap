@@ -1,0 +1,6 @@
+framework module TKHomeMain {
+  umbrella header "TKHomeMain-umbrella.h"
+
+  export *
+  module * { export * }
+}

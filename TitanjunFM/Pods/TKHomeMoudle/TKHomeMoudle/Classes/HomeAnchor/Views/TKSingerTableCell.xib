@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="singerCell" rowHeight="70" id="nkk-X7-VpB" customClass="TKSingerTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nkk-X7-VpB" id="BS1-dc-Amn">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="103-nT-bmr">
+                        <rect key="frame" x="10" y="10" width="49.5" height="49.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="103-nT-bmr" secondAttribute="height" multiplier="1:1" id="cMG-xV-zSO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KH-g2-hCM">
+                        <rect key="frame" x="69.5" y="5" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPs-rj-rUf">
+                        <rect key="frame" x="69.5" y="27" width="180.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TKHomeMoudle.bundle/album_tracks" translatesAutoresizingMaskIntoConstraints="NO" id="qHL-Nt-gza">
+                        <rect key="frame" x="69.5" y="45.5" width="10" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="Rip-aZ-RiC"/>
+                            <constraint firstAttribute="height" constant="14" id="fme-vO-8Ey"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TKHomeMoudle.bundle/live_ic_follow" translatesAutoresizingMaskIntoConstraints="NO" id="SsA-jW-9P2">
+                        <rect key="frame" x="260" y="25" width="40" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Hcw-SR-t7U"/>
+                            <constraint firstAttribute="width" constant="40" id="mP6-qc-t0L"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-KY-n2i">
+                        <rect key="frame" x="84.5" y="45.5" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TKHomeMoudle.bundle/me_fans_verifylogo" translatesAutoresizingMaskIntoConstraints="NO" id="Xuy-tu-NNX">
+                        <rect key="frame" x="115" y="5" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="0Sy-ff-S5w"/>
+                            <constraint firstAttribute="width" constant="18" id="Lj3-S7-3LR"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SsA-jW-9P2" firstAttribute="leading" secondItem="UPs-rj-rUf" secondAttribute="trailing" constant="10" id="1tw-91-3dj"/>
+                    <constraint firstAttribute="trailing" secondItem="SsA-jW-9P2" secondAttribute="trailing" constant="20" id="5lh-to-AcR"/>
+                    <constraint firstItem="103-nT-bmr" firstAttribute="leading" secondItem="BS1-dc-Amn" secondAttribute="leading" constant="10" id="6d5-CU-d9i"/>
+                    <constraint firstAttribute="bottom" secondItem="103-nT-bmr" secondAttribute="bottom" constant="10" id="AF1-8f-b15"/>
+                    <constraint firstItem="qHL-Nt-gza" firstAttribute="leading" secondItem="103-nT-bmr" secondAttribute="trailing" constant="10" id="Eh9-QF-iyO"/>
+                    <constraint firstItem="Dmk-KY-n2i" firstAttribute="centerY" secondItem="qHL-Nt-gza" secondAttribute="centerY" id="OV4-bH-exu"/>
+                    <constraint firstItem="0KH-g2-hCM" firstAttribute="top" secondItem="103-nT-bmr" secondAttribute="top" constant="-5" id="OzJ-Ao-JhO"/>
+                    <constraint firstItem="SsA-jW-9P2" firstAttribute="centerY" secondItem="BS1-dc-Amn" secondAttribute="centerY" id="PXG-oz-qzY"/>
+                    <constraint firstItem="Xuy-tu-NNX" firstAttribute="centerY" secondItem="0KH-g2-hCM" secondAttribute="centerY" id="cdJ-Nv-egA"/>
+                    <constraint firstItem="qHL-Nt-gza" firstAttribute="bottom" secondItem="103-nT-bmr" secondAttribute="bottom" id="czu-ys-0NW"/>
+                    <constraint firstItem="Xuy-tu-NNX" firstAttribute="leading" secondItem="0KH-g2-hCM" secondAttribute="trailing" constant="8" id="doA-jb-uha"/>
+                    <constraint firstItem="UPs-rj-rUf" firstAttribute="leading" secondItem="103-nT-bmr" secondAttribute="trailing" constant="10" id="fe9-vb-D5x"/>
+                    <constraint firstItem="103-nT-bmr" firstAttribute="top" secondItem="BS1-dc-Amn" secondAttribute="top" constant="10" id="gxs-2s-H4N"/>
+                    <constraint firstItem="Dmk-KY-n2i" firstAttribute="leading" secondItem="103-nT-bmr" secondAttribute="trailing" constant="10" id="iTJ-ZT-VPb"/>
+                    <constraint firstItem="Dmk-KY-n2i" firstAttribute="bottom" secondItem="103-nT-bmr" secondAttribute="bottom" id="iYQ-nX-56N"/>
+                    <constraint firstItem="0KH-g2-hCM" firstAttribute="leading" secondItem="103-nT-bmr" secondAttribute="trailing" constant="10" id="mKW-sw-P8P"/>
+                    <constraint firstItem="UPs-rj-rUf" firstAttribute="centerY" secondItem="103-nT-bmr" secondAttribute="centerY" id="vXC-v7-bqF"/>
+                    <constraint firstItem="Dmk-KY-n2i" firstAttribute="leading" secondItem="qHL-Nt-gza" secondAttribute="trailing" constant="5" id="yea-qn-yEj"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="iTJ-ZT-VPb"/>
+                        <exclude reference="iYQ-nX-56N"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fansLabel" destination="Dmk-KY-n2i" id="6F6-bx-9cv"/>
+                <outlet property="middleLabel" destination="UPs-rj-rUf" id="3LI-qe-gSZ"/>
+                <outlet property="singerIcon" destination="103-nT-bmr" id="omW-OA-MWZ"/>
+                <outlet property="titleLabel" destination="0KH-g2-hCM" id="gEo-JT-GAO"/>
+                <outlet property="vLogo" destination="Xuy-tu-NNX" id="vIf-RU-fhQ"/>
+            </connections>
+            <point key="canvasLocation" x="171" y="249"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TKHomeMoudle.bundle/album_tracks" width="16" height="16"/>
+        <image name="TKHomeMoudle.bundle/live_ic_follow" width="16" height="16"/>
+        <image name="TKHomeMoudle.bundle/me_fans_verifylogo" width="16" height="16"/>
+    </resources>
+</document>

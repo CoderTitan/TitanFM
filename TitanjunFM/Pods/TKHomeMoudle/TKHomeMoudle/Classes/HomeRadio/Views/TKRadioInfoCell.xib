@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoCell" rowHeight="88" id="amm-Va-PYb" customClass="TKRadioInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="amm-Va-PYb" id="RZP-ba-Pwq">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AFY-dk-3Kw">
+                        <rect key="frame" x="8" y="10" width="68" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68" id="Aoc-Tg-PPM"/>
+                            <constraint firstAttribute="width" constant="68" id="UDP-Kb-Gsi"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMA-wG-Q0T">
+                        <rect key="frame" x="84" y="10" width="228" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTx-oc-Sde">
+                        <rect key="frame" x="84" y="35" width="228" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yb-KE-Ci4">
+                        <rect key="frame" x="84" y="60" width="228" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrD-fu-htX">
+                        <rect key="frame" x="280" y="28" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="9Bf-TZ-bbw"/>
+                            <constraint firstAttribute="width" constant="32" id="ZI6-BV-v1j"/>
+                        </constraints>
+                        <state key="normal" image="TKHomeMoudle.bundle/liveRadioCellPlay"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AFY-dk-3Kw" firstAttribute="leading" secondItem="RZP-ba-Pwq" secondAttribute="leading" constant="8" id="6UJ-OW-PGq"/>
+                    <constraint firstItem="8Yb-KE-Ci4" firstAttribute="leading" secondItem="AFY-dk-3Kw" secondAttribute="trailing" constant="8" id="B9B-KN-gqW"/>
+                    <constraint firstAttribute="trailing" secondItem="BMA-wG-Q0T" secondAttribute="trailing" constant="8" id="Cj3-f3-E9n"/>
+                    <constraint firstAttribute="trailing" secondItem="QTx-oc-Sde" secondAttribute="trailing" constant="8" id="OXV-3R-mdQ"/>
+                    <constraint firstAttribute="trailing" secondItem="GrD-fu-htX" secondAttribute="trailing" constant="8" id="QEw-mg-s9e"/>
+                    <constraint firstItem="8Yb-KE-Ci4" firstAttribute="bottom" secondItem="AFY-dk-3Kw" secondAttribute="bottom" id="ZXM-J3-7H6"/>
+                    <constraint firstAttribute="trailing" secondItem="8Yb-KE-Ci4" secondAttribute="trailing" constant="8" id="dXh-KA-3kv"/>
+                    <constraint firstItem="QTx-oc-Sde" firstAttribute="centerY" secondItem="AFY-dk-3Kw" secondAttribute="centerY" id="eWg-ze-OuS"/>
+                    <constraint firstItem="GrD-fu-htX" firstAttribute="centerY" secondItem="RZP-ba-Pwq" secondAttribute="centerY" id="fsj-gb-amI"/>
+                    <constraint firstItem="BMA-wG-Q0T" firstAttribute="leading" secondItem="AFY-dk-3Kw" secondAttribute="trailing" constant="8" id="kvc-DJ-l1l"/>
+                    <constraint firstItem="QTx-oc-Sde" firstAttribute="leading" secondItem="AFY-dk-3Kw" secondAttribute="trailing" constant="8" id="mg3-3L-zms"/>
+                    <constraint firstItem="BMA-wG-Q0T" firstAttribute="top" secondItem="AFY-dk-3Kw" secondAttribute="top" id="n6n-aL-tgp"/>
+                    <constraint firstItem="AFY-dk-3Kw" firstAttribute="centerY" secondItem="RZP-ba-Pwq" secondAttribute="centerY" id="wqo-xT-3lC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="coverImageView" destination="AFY-dk-3Kw" id="DfX-UN-ujO"/>
+                <outlet property="nameLabel" destination="BMA-wG-Q0T" id="dPA-UH-QOq"/>
+                <outlet property="playCountLable" destination="8Yb-KE-Ci4" id="dZI-V8-PxC"/>
+                <outlet property="programNameLable" destination="QTx-oc-Sde" id="ytm-uq-qmQ"/>
+            </connections>
+            <point key="canvasLocation" x="224" y="215"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TKHomeMoudle.bundle/liveRadioCellPlay" width="16" height="16"/>
+    </resources>
+</document>

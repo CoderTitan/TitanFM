@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="PjW-ca-b2n" customClass="TKCategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PjW-ca-b2n" id="eXf-5s-mQZ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ind-xw-gwn">
+                        <rect key="frame" x="159.5" y="0.0" width="1" height="43.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="m0w-A9-8En"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsI-Nf-5Fv" customClass="TKCellButton">
+                        <rect key="frame" x="0.0" y="0.0" width="159.5" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEq-PK-jNV">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="sDC-5h-Ecy"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUN-3j-Qmn" customClass="TKCellButton">
+                        <rect key="frame" x="160.5" y="0.0" width="159.5" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ind-xw-gwn" firstAttribute="top" secondItem="eXf-5s-mQZ" secondAttribute="top" id="8V1-y1-x9K"/>
+                    <constraint firstItem="JUN-3j-Qmn" firstAttribute="height" secondItem="GsI-Nf-5Fv" secondAttribute="height" id="8tX-cR-Dyq"/>
+                    <constraint firstAttribute="bottom" secondItem="GsI-Nf-5Fv" secondAttribute="bottom" id="BYH-Gu-fzc"/>
+                    <constraint firstItem="mEq-PK-jNV" firstAttribute="leading" secondItem="eXf-5s-mQZ" secondAttribute="leading" id="GsU-2O-ur4"/>
+                    <constraint firstAttribute="trailing" secondItem="mEq-PK-jNV" secondAttribute="trailing" id="J65-Cx-5cU"/>
+                    <constraint firstItem="GsI-Nf-5Fv" firstAttribute="leading" secondItem="eXf-5s-mQZ" secondAttribute="leading" id="Osa-Ev-hgV"/>
+                    <constraint firstAttribute="bottom" secondItem="JUN-3j-Qmn" secondAttribute="bottom" id="Tf9-Sp-LQz"/>
+                    <constraint firstAttribute="trailing" secondItem="JUN-3j-Qmn" secondAttribute="trailing" id="Tra-b8-rop"/>
+                    <constraint firstItem="JUN-3j-Qmn" firstAttribute="width" secondItem="GsI-Nf-5Fv" secondAttribute="width" id="V8A-lY-KIF"/>
+                    <constraint firstItem="Ind-xw-gwn" firstAttribute="leading" secondItem="GsI-Nf-5Fv" secondAttribute="trailing" id="XcN-oh-vX6"/>
+                    <constraint firstItem="JUN-3j-Qmn" firstAttribute="leading" secondItem="Ind-xw-gwn" secondAttribute="trailing" id="Zsa-wc-qdS"/>
+                    <constraint firstItem="GsI-Nf-5Fv" firstAttribute="top" secondItem="eXf-5s-mQZ" secondAttribute="top" id="dx2-SE-jdi"/>
+                    <constraint firstItem="JUN-3j-Qmn" firstAttribute="top" secondItem="eXf-5s-mQZ" secondAttribute="top" id="e2Q-6b-4Yb"/>
+                    <constraint firstAttribute="bottom" secondItem="mEq-PK-jNV" secondAttribute="bottom" id="jUT-UP-cxI"/>
+                    <constraint firstAttribute="bottom" secondItem="Ind-xw-gwn" secondAttribute="bottom" id="kAA-DU-JNt"/>
+                    <constraint firstItem="Ind-xw-gwn" firstAttribute="centerX" secondItem="eXf-5s-mQZ" secondAttribute="centerX" id="uoq-7n-Dvg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftButton" destination="GsI-Nf-5Fv" id="lDq-1v-ZQJ"/>
+                <outlet property="rightButton" destination="JUN-3j-Qmn" id="aiA-Q2-URp"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="-138"/>
+        </tableViewCell>
+    </objects>
+</document>

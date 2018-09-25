@@ -10,8 +10,9 @@ target 'TitanjunFM' do
   use_frameworks!
 
   
-  pod 'MainMoudle'
+  pod 'TKMainMoudle'
   pod 'DownLoadListen'
+  pod 'TKHomeMain'
 
 
 

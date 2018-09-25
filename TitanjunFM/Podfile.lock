@@ -1,4 +1,9 @@
 PODS:
+  - ADPictureView (0.1.0):
+    - ADPictureView/AdPicView (= 0.1.0)
+    - ADPictureView/MenueView (= 0.1.0)
+  - ADPictureView/AdPicView (0.1.0)
+  - ADPictureView/MenueView (0.1.0)
   - AFNetworking (3.2.1):
     - AFNetworking/NSURLSession (= 3.2.1)
     - AFNetworking/Reachability (= 3.2.1)
@@ -14,68 +19,112 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - DownLoadListen (0.1.3):
+  - DownLoadListen (0.1.5):
     - MJExtension
     - SDWebImage
     - TitanFMBase
     - TKDownloadPlayer
     - TKSegmentBar
     - TKSqliteTool
-  - MainMoudle (0.3.4):
-    - TitanFMBase/Category
   - MJExtension (3.0.15.1)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
-  - TitanFMBase (0.2.1):
-    - TitanFMBase/Base (= 0.2.1)
-    - TitanFMBase/Category (= 0.2.1)
-    - TitanFMBase/Network (= 0.2.1)
-    - TitanFMBase/Tools (= 0.2.1)
-  - TitanFMBase/Base (0.2.1)
-  - TitanFMBase/Category (0.2.1)
-  - TitanFMBase/Network (0.2.1):
+  - TitanFMBase (0.1.0):
+    - TitanFMBase/Base (= 0.1.0)
+    - TitanFMBase/Category (= 0.1.0)
+    - TitanFMBase/Network (= 0.1.0)
+    - TitanFMBase/Tools (= 0.1.0)
+  - TitanFMBase/Base (0.1.0)
+  - TitanFMBase/Category (0.1.0)
+  - TitanFMBase/Network (0.1.0):
     - AFNetworking
     - SDWebImage
     - TitanFMBase/Category
-  - TitanFMBase/Tools (0.2.1)
-  - TKDownloadPlayer (0.2.2):
-    - TKDownloadPlayer/TKDownload (= 0.2.2)
-    - TKDownloadPlayer/TKRemotePlayer (= 0.2.2)
-  - TKDownloadPlayer/TKDownload (0.2.2)
-  - TKDownloadPlayer/TKRemotePlayer (0.2.2)
-  - TKSegmentBar (0.1.2):
+  - TitanFMBase/Tools (0.1.0)
+  - TKCommonModel (0.1.1):
+    - ADPictureView
+  - TKDownloadPlayer (0.2.3):
+    - TKDownloadPlayer/TKDownload (= 0.2.3)
+    - TKDownloadPlayer/TKRemotePlayer (= 0.2.3)
+  - TKDownloadPlayer/TKDownload (0.2.3)
+  - TKDownloadPlayer/TKRemotePlayer (0.2.3)
+  - TKHomeMain (0.1.0):
+    - MJExtension
+    - TitanFMBase
+    - TKHomeMoudle
+    - TKSegmentBar
+  - TKHomeMoudle (0.2.0):
+    - MJExtension
+    - TitanFMBase
+    - TKCommonModel
+    - TKHomeMoudle/HomeAnchor (= 0.2.0)
+    - TKHomeMoudle/HomeCategory (= 0.2.0)
+    - TKHomeMoudle/HomeRadio (= 0.2.0)
+    - TKHomeMoudle/HomeRank (= 0.2.0)
+    - TKHomeMoudle/HomeRecommand (= 0.2.0)
+  - TKHomeMoudle/HomeAnchor (0.2.0):
+    - MJExtension
+    - TitanFMBase
+    - TKCommonModel
+  - TKHomeMoudle/HomeCategory (0.2.0):
+    - MJExtension
+    - TitanFMBase
+    - TKCommonModel
+  - TKHomeMoudle/HomeRadio (0.2.0):
+    - MJExtension
+    - TitanFMBase
+    - TKCommonModel
+  - TKHomeMoudle/HomeRank (0.2.0):
+    - MJExtension
+    - TitanFMBase
+    - TKCommonModel
+  - TKHomeMoudle/HomeRecommand (0.2.0):
+    - MJExtension
+    - TitanFMBase
+    - TKCommonModel
+  - TKMainMoudle (0.1.0):
     - TitanFMBase/Category
-  - TKSqliteTool (0.3.1)
+  - TKSegmentBar (0.2.2)
+  - TKSqliteTool (0.1.0)
 
 DEPENDENCIES:
   - DownLoadListen
-  - MainMoudle
+  - TKHomeMain
+  - TKMainMoudle
 
 SPEC REPOS:
   https://git.coding.net/CoderTitan/TitanjunSpec.git:
     - DownLoadListen
-    - MainMoudle
-    - TitanFMBase
+    - TKCommonModel
     - TKDownloadPlayer
-    - TKSegmentBar
-    - TKSqliteTool
+    - TKHomeMain
+    - TKHomeMoudle
   https://github.com/cocoapods/specs.git:
+    - ADPictureView
     - AFNetworking
     - MJExtension
     - SDWebImage
+    - TitanFMBase
+    - TKMainMoudle
+    - TKSegmentBar
+    - TKSqliteTool
 
 SPEC CHECKSUMS:
+  ADPictureView: 49a3a8a04b30c30e8405b8269e8e7f7733b6196e
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  DownLoadListen: 2eb2fedf78de234055545a4806c0054af873120f
-  MainMoudle: 935c2965a23795f65d8697a6b1f0f30fcd52618f
+  DownLoadListen: 84d5b2ff1127a1d44890370534df88a992880792
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
-  TitanFMBase: bedc2b6a2a7bfa144d13e62650b25187b4ba52b3
-  TKDownloadPlayer: f1f4eb74020215f0a8365289dc7e051fcaba9597
-  TKSegmentBar: fc97658226ff26dfcb781fd4bead1a6b1433e63a
-  TKSqliteTool: 04a4d9db0a66005fcbcb7cac8898c721118a4e78
+  TitanFMBase: a4049b2cd12e7f54cc0b58e2d7538431fc6d4c2d
+  TKCommonModel: e75f3a0ecd0d2023122703f925217c3ed3bc423d
+  TKDownloadPlayer: 51e084f18f5d94a76131ecb7e33b886f8502a251
+  TKHomeMain: e3a83a31affea00ed213ac021ec332239dd212c0
+  TKHomeMoudle: 38508f8030427112635d1ed9ee3d4727e6d3f53f
+  TKMainMoudle: 53188f8e8decd373253a62993454a3ca3382f9a1
+  TKSegmentBar: 7a57817b2b1bcc68b504747660936892e741ee89
+  TKSqliteTool: 39e521e85b6fb3a9770b180dbaf66928e5b9fb0b
 
-PODFILE CHECKSUM: e96e005d750d2ec22bd672fe61f193d16eb5dc70
+PODFILE CHECKSUM: 9b828f540a50c6249ed7c091d93f50cd901d2a58
 
 COCOAPODS: 1.5.3

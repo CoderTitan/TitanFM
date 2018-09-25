@@ -10,8 +10,12 @@
 
 @interface UIImage (Image)
 
++ (UIImage *)bundleImageWithClass:(Class)clas Name: (NSString *)name;
+
+
 + (UIImage *)originImageWithName: (NSString *)name;
 
 - (UIImage *)circleImage;
+
 
 @end

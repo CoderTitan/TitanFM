@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="itemID" id="xR8-ds-S4O" customClass="TKItemCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="177"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="177"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f3O-Wh-4gh">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="f3O-Wh-4gh" secondAttribute="height" multiplier="1:1" id="S3U-rc-cEW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="妮妲疯了, 我们停了!!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi0-15-Yc2">
+                        <rect key="frame" x="0.0" y="110" width="100" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPz-g9-dqy">
+                        <rect key="frame" x="15" y="151.5" width="85" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TKHomeMoudle.bundle/find_specialicon" translatesAutoresizingMaskIntoConstraints="NO" id="lwF-9t-Dou">
+                        <rect key="frame" x="0.0" y="151.5" width="10" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="CgS-cB-FLF"/>
+                            <constraint firstAttribute="width" constant="10" id="Gjo-Gy-riX"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TKHomeMoudle.bundle/albumtag_pay" translatesAutoresizingMaskIntoConstraints="NO" id="u4g-c3-Uru">
+                        <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="h9A-aI-RDf"/>
+                            <constraint firstAttribute="height" constant="34" id="iXu-jC-tPR"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Hi0-15-Yc2" firstAttribute="leading" secondItem="xR8-ds-S4O" secondAttribute="leading" id="23M-51-PjH"/>
+                <constraint firstItem="lwF-9t-Dou" firstAttribute="top" secondItem="Hi0-15-Yc2" secondAttribute="bottom" constant="10" id="4Ay-CV-CLP"/>
+                <constraint firstItem="lwF-9t-Dou" firstAttribute="leading" secondItem="xR8-ds-S4O" secondAttribute="leading" id="BIq-mc-uKU"/>
+                <constraint firstItem="GPz-g9-dqy" firstAttribute="top" secondItem="Hi0-15-Yc2" secondAttribute="bottom" constant="10" id="HDX-Su-dh1"/>
+                <constraint firstItem="f3O-Wh-4gh" firstAttribute="top" secondItem="xR8-ds-S4O" secondAttribute="top" id="TOR-bI-000"/>
+                <constraint firstItem="GPz-g9-dqy" firstAttribute="leading" secondItem="xR8-ds-S4O" secondAttribute="leading" constant="15" id="Wwo-kZ-J1h"/>
+                <constraint firstItem="u4g-c3-Uru" firstAttribute="leading" secondItem="xR8-ds-S4O" secondAttribute="leading" id="cPd-wk-9Zv"/>
+                <constraint firstItem="f3O-Wh-4gh" firstAttribute="leading" secondItem="xR8-ds-S4O" secondAttribute="leading" id="dft-WJ-Z9x"/>
+                <constraint firstItem="u4g-c3-Uru" firstAttribute="top" secondItem="xR8-ds-S4O" secondAttribute="top" id="hUy-hB-sHm"/>
+                <constraint firstAttribute="trailing" secondItem="f3O-Wh-4gh" secondAttribute="trailing" id="jHb-Kr-Cba"/>
+                <constraint firstItem="Hi0-15-Yc2" firstAttribute="top" secondItem="f3O-Wh-4gh" secondAttribute="bottom" constant="10" id="uD8-xX-5yw"/>
+                <constraint firstAttribute="trailing" secondItem="GPz-g9-dqy" secondAttribute="trailing" id="vqG-wq-nGf"/>
+                <constraint firstAttribute="trailing" secondItem="Hi0-15-Yc2" secondAttribute="trailing" id="yCF-YE-U7I"/>
+            </constraints>
+            <size key="customSize" width="113" height="174"/>
+            <connections>
+                <outlet property="albumCoverImageView" destination="f3O-Wh-4gh" id="ybc-67-NUE"/>
+                <outlet property="detailLabel" destination="GPz-g9-dqy" id="1rp-nL-Pfi"/>
+                <outlet property="payIcon" destination="u4g-c3-Uru" id="m8t-hm-5jP"/>
+                <outlet property="titleLabel" destination="Hi0-15-Yc2" id="r7r-hI-sWV"/>
+            </connections>
+            <point key="canvasLocation" x="362" y="249.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="TKHomeMoudle.bundle/albumtag_pay" width="16" height="16"/>
+        <image name="TKHomeMoudle.bundle/find_specialicon" width="16" height="16"/>
+    </resources>
+</document>

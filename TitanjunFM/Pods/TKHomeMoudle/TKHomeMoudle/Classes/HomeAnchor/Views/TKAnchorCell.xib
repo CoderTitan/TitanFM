@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="anchorCell" id="z5L-q9-z8U" customClass="TKAnchorCell">
+            <rect key="frame" x="0.0" y="0.0" width="68" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="68" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Qd-oT-YFC">
+                        <rect key="frame" x="0.0" y="5" width="68" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="9Qd-oT-YFC" secondAttribute="height" multiplier="1:1" id="1hQ-2k-VOL"/>
+                            <constraint firstAttribute="width" secondItem="9Qd-oT-YFC" secondAttribute="height" multiplier="1:1" id="K5d-uU-UxC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="妮妲疯了, 我们停了!!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45z-gl-vSr">
+                        <rect key="frame" x="0.0" y="78" width="68" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9Qd-oT-YFC" firstAttribute="top" secondItem="z5L-q9-z8U" secondAttribute="top" constant="5" id="43y-TB-PVn"/>
+                <constraint firstItem="9Qd-oT-YFC" firstAttribute="leading" secondItem="z5L-q9-z8U" secondAttribute="leading" id="6lX-9c-Y1O"/>
+                <constraint firstAttribute="trailing" secondItem="45z-gl-vSr" secondAttribute="trailing" id="Gub-dN-ZZc"/>
+                <constraint firstItem="45z-gl-vSr" firstAttribute="top" secondItem="9Qd-oT-YFC" secondAttribute="bottom" constant="5" id="Qhz-79-bEl"/>
+                <constraint firstAttribute="trailing" secondItem="9Qd-oT-YFC" secondAttribute="trailing" id="mDS-sM-NGk"/>
+                <constraint firstItem="45z-gl-vSr" firstAttribute="leading" secondItem="z5L-q9-z8U" secondAttribute="leading" id="ozK-U4-dZt"/>
+            </constraints>
+            <size key="customSize" width="81" height="99"/>
+            <connections>
+                <outlet property="imageView" destination="9Qd-oT-YFC" id="Z2R-WP-uu9"/>
+                <outlet property="titleLabel" destination="45z-gl-vSr" id="zAJ-YN-Fud"/>
+            </connections>
+            <point key="canvasLocation" x="381" y="211"/>
+        </collectionViewCell>
+    </objects>
+</document>

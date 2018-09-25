@@ -1,0 +1,6 @@
+framework module ADPictureView {
+  umbrella header "ADPictureView-umbrella.h"
+
+  export *
+  module * { export * }
+}

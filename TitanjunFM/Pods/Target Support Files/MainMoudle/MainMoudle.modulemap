@@ -1,6 +1,0 @@
-framework module MainMoudle {
-  umbrella header "MainMoudle-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TKSegmentBar.h"
+#import "NSString+SegmentProtocol.h"
 
-@interface TKSegmentController : UIViewController
+@interface TKSegmentController : UICollectionViewController
 
-@property (nonatomic, weak) TKSegmentBar *segmentBar;
+@property (nonatomic, assign) CGFloat expectedHeight;
 
-
-- (void)setUpWithItems: (NSArray <NSString *>*)items childVCs: (NSArray <UIViewController *>*)childVCs;
+@property (nonatomic, strong) NSArray <id<TKSegmentModelProtocol>> *items;
 
 @end

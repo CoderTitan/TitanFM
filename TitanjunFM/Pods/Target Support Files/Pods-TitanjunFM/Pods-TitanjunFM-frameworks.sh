@@ -143,23 +143,31 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/ADPictureView/ADPictureView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DownLoadListen/DownLoadListen.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/MainMoudle/MainMoudle.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TKCommonModel/TKCommonModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TKDownloadPlayer/TKDownloadPlayer.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TKHomeMain/TKHomeMain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TKHomeMoudle/TKHomeMoudle.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TKMainMoudle/TKMainMoudle.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TKSegmentBar/TKSegmentBar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TKSqliteTool/TKSqliteTool.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TitanFMBase/TitanFMBase.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/ADPictureView/ADPictureView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DownLoadListen/DownLoadListen.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/MainMoudle/MainMoudle.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TKCommonModel/TKCommonModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TKDownloadPlayer/TKDownloadPlayer.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TKHomeMain/TKHomeMain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TKHomeMoudle/TKHomeMoudle.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TKMainMoudle/TKMainMoudle.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TKSegmentBar/TKSegmentBar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TKSqliteTool/TKSqliteTool.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TitanFMBase/TitanFMBase.framework"

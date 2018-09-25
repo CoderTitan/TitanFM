@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="lca-ba-JjL" customClass="TKSingerGroupTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lca-ba-JjL" id="r2j-Ir-zLL">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6H-yz-Z8d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJw-S6-q2w">
+                                <rect key="frame" x="0.0" y="34" width="320" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="VVo-Sa-HFl"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TKHomeMoudle.bundle/liveRadioCellPoint" translatesAutoresizingMaskIntoConstraints="NO" id="Ix6-Nw-Pj3">
+                                <rect key="frame" x="11" y="12.5" width="10" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="5Wz-Ck-sT6"/>
+                                    <constraint firstAttribute="height" constant="10" id="wUy-7d-bAi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小编推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlo-qA-s4C">
+                                <rect key="frame" x="26" y="9" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ll4-2D-GYV">
+                                <rect key="frame" x="275" y="3.5" width="35" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="更多&gt;">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wlo-qA-s4C" firstAttribute="centerY" secondItem="l6H-yz-Z8d" secondAttribute="centerY" id="E8e-Q6-ZFx"/>
+                            <constraint firstAttribute="height" constant="35" id="EYw-8k-UXc"/>
+                            <constraint firstItem="Ix6-Nw-Pj3" firstAttribute="centerY" secondItem="l6H-yz-Z8d" secondAttribute="centerY" id="KKz-mo-vC1"/>
+                            <constraint firstItem="uJw-S6-q2w" firstAttribute="leading" secondItem="l6H-yz-Z8d" secondAttribute="leading" id="Xhn-lp-UUc"/>
+                            <constraint firstAttribute="bottom" secondItem="uJw-S6-q2w" secondAttribute="bottom" id="aaU-3v-rWD"/>
+                            <constraint firstItem="Ll4-2D-GYV" firstAttribute="centerY" secondItem="l6H-yz-Z8d" secondAttribute="centerY" id="cED-uw-NnB"/>
+                            <constraint firstAttribute="trailing" secondItem="Ll4-2D-GYV" secondAttribute="trailing" constant="10" id="eIe-C5-KQP"/>
+                            <constraint firstItem="wlo-qA-s4C" firstAttribute="leading" secondItem="Ix6-Nw-Pj3" secondAttribute="trailing" constant="5" id="gNb-lD-3AD"/>
+                            <constraint firstItem="Ix6-Nw-Pj3" firstAttribute="leading" secondItem="l6H-yz-Z8d" secondAttribute="leadingMargin" constant="3" id="qwq-2s-k7O"/>
+                            <constraint firstAttribute="trailing" secondItem="uJw-S6-q2w" secondAttribute="trailing" id="ylq-AV-1YG"/>
+                        </constraints>
+                    </view>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aVD-DG-aJw">
+                        <rect key="frame" x="0.0" y="37" width="320" height="112.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="lca-ba-JjL" id="5LZ-3b-LoW"/>
+                            <outlet property="delegate" destination="lca-ba-JjL" id="Mpm-yI-5H2"/>
+                        </connections>
+                    </tableView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aVD-DG-aJw" firstAttribute="leading" secondItem="r2j-Ir-zLL" secondAttribute="leading" id="2fP-p3-rzf"/>
+                    <constraint firstAttribute="trailing" secondItem="l6H-yz-Z8d" secondAttribute="trailing" id="2tm-EM-xsC"/>
+                    <constraint firstItem="l6H-yz-Z8d" firstAttribute="top" secondItem="r2j-Ir-zLL" secondAttribute="top" id="3gB-BN-Thb"/>
+                    <constraint firstItem="l6H-yz-Z8d" firstAttribute="leading" secondItem="r2j-Ir-zLL" secondAttribute="leading" id="UfL-ga-ScY"/>
+                    <constraint firstItem="aVD-DG-aJw" firstAttribute="top" secondItem="l6H-yz-Z8d" secondAttribute="bottom" constant="2" id="eRx-io-BsZ"/>
+                    <constraint firstAttribute="trailing" secondItem="aVD-DG-aJw" secondAttribute="trailing" id="jYn-pA-lLA"/>
+                    <constraint firstAttribute="bottom" secondItem="aVD-DG-aJw" secondAttribute="bottom" id="nzB-Rj-Cwz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="tableView" destination="aVD-DG-aJw" id="Lmn-md-Kla"/>
+                <outlet property="titleLabel" destination="wlo-qA-s4C" id="a5b-bo-0c3"/>
+            </connections>
+            <point key="canvasLocation" x="265.60000000000002" y="164.6176911544228"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TKHomeMoudle.bundle/liveRadioCellPoint" width="16" height="16"/>
+    </resources>
+</document>

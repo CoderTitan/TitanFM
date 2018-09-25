@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditorCell" rowHeight="75" id="BVF-ld-HbG" customClass="TKNominateEditorCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BVF-ld-HbG" id="EyE-8X-Q1c">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uS4-T7-2bC">
+                        <rect key="frame" x="8" y="8" width="68" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68" id="QPv-F2-Wlk"/>
+                            <constraint firstAttribute="width" constant="68" id="ic9-wK-222"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr8-s0-ko6">
+                        <rect key="frame" x="84" y="35.5" width="205" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXg-im-L7c">
+                        <rect key="frame" x="84" y="8" width="205" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fL-NV-Q2I">
+                        <rect key="frame" x="84" y="61.5" width="71" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="1000.0万" image="TKHomeMoudle.bundle/album_play">
+                            <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzp-6N-fj5">
+                        <rect key="frame" x="163" y="61.5" width="54" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="999集" image="TKHomeMoudle.bundle/album_tracks">
+                            <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TKHomeMoudle.bundle/cell_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="FXc-oX-Zpl">
+                        <rect key="frame" x="297" y="36.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="FJX-33-dDy"/>
+                            <constraint firstAttribute="width" constant="15" id="rSu-ee-Dp8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2fL-NV-Q2I" firstAttribute="top" secondItem="fr8-s0-ko6" secondAttribute="bottom" constant="8" id="06e-DE-CBN"/>
+                    <constraint firstAttribute="trailing" secondItem="fr8-s0-ko6" secondAttribute="trailing" constant="31" id="1xn-Jq-wd6"/>
+                    <constraint firstItem="MXg-im-L7c" firstAttribute="leading" secondItem="uS4-T7-2bC" secondAttribute="trailing" constant="8" id="59U-0G-oNY"/>
+                    <constraint firstItem="uS4-T7-2bC" firstAttribute="leading" secondItem="EyE-8X-Q1c" secondAttribute="leading" constant="8" id="6fI-kg-8WM"/>
+                    <constraint firstItem="uS4-T7-2bC" firstAttribute="top" secondItem="EyE-8X-Q1c" secondAttribute="top" constant="8" id="Emf-0i-pwV"/>
+                    <constraint firstItem="Fzp-6N-fj5" firstAttribute="leading" secondItem="2fL-NV-Q2I" secondAttribute="trailing" constant="8" id="FTr-kH-P0A"/>
+                    <constraint firstItem="2fL-NV-Q2I" firstAttribute="leading" secondItem="uS4-T7-2bC" secondAttribute="trailing" constant="8" id="Obt-Mw-NgQ"/>
+                    <constraint firstItem="MXg-im-L7c" firstAttribute="top" secondItem="EyE-8X-Q1c" secondAttribute="top" constant="8" id="PQk-YD-nPx"/>
+                    <constraint firstAttribute="trailing" secondItem="MXg-im-L7c" secondAttribute="trailing" constant="31" id="Rcv-h6-djB"/>
+                    <constraint firstAttribute="bottom" secondItem="2fL-NV-Q2I" secondAttribute="bottom" constant="8" id="UOE-Ks-dFd"/>
+                    <constraint firstItem="fr8-s0-ko6" firstAttribute="top" secondItem="MXg-im-L7c" secondAttribute="bottom" constant="8" id="X8N-0E-9QJ"/>
+                    <constraint firstItem="Fzp-6N-fj5" firstAttribute="bottom" secondItem="2fL-NV-Q2I" secondAttribute="bottom" id="hat-aA-eAk"/>
+                    <constraint firstItem="FXc-oX-Zpl" firstAttribute="centerY" secondItem="EyE-8X-Q1c" secondAttribute="centerY" id="jfe-7i-trp"/>
+                    <constraint firstAttribute="trailing" secondItem="FXc-oX-Zpl" secondAttribute="trailing" constant="8" id="rig-KA-At3"/>
+                    <constraint firstItem="Fzp-6N-fj5" firstAttribute="top" secondItem="2fL-NV-Q2I" secondAttribute="top" id="thW-rd-VFL"/>
+                    <constraint firstItem="fr8-s0-ko6" firstAttribute="leading" secondItem="uS4-T7-2bC" secondAttribute="trailing" constant="8" id="wMR-m0-mIp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="introLabel" destination="fr8-s0-ko6" id="sMy-EW-hez"/>
+                <outlet property="playsCountsBtn" destination="2fL-NV-Q2I" id="UrK-Nh-h2b"/>
+                <outlet property="smallImageView" destination="uS4-T7-2bC" id="JkY-5P-lVQ"/>
+                <outlet property="title" destination="MXg-im-L7c" id="eaI-pB-31I"/>
+                <outlet property="tracksBtn" destination="Fzp-6N-fj5" id="r65-Ve-p5R"/>
+            </connections>
+            <point key="canvasLocation" x="123" y="265"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TKHomeMoudle.bundle/album_play" width="16" height="16"/>
+        <image name="TKHomeMoudle.bundle/album_tracks" width="16" height="16"/>
+        <image name="TKHomeMoudle.bundle/cell_arrow" width="16" height="16"/>
+    </resources>
+</document>

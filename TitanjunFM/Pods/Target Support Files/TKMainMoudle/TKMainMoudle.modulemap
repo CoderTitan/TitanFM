@@ -1,0 +1,6 @@
+framework module TKMainMoudle {
+  umbrella header "TKMainMoudle-umbrella.h"
+
+  export *
+  module * { export * }
+}

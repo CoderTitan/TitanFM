@@ -35,6 +35,7 @@
     [super viewDidLoad];
     
     self.tableView.rowHeight = 80;
+    self.view.backgroundColor = [UIColor whiteColor];
     
     __weak typeof(self) weakSelf = self;
     [[TodayFireViewModel shareInstance] getTodayFireVoiceMsWithKey:self.loadKey result:^(NSArray<DownloadVoiceModel *> *voiceArr) {

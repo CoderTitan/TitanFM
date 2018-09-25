@@ -12,28 +12,76 @@
 @implementation TKSegmentConfig
 
 + (instancetype)defaultConfig {
-    TKSegmentConfig *config = [[TKSegmentConfig alloc] init];
-    config.segmentBarBackColor = [UIColor clearColor];
-    config.itemFont = [UIFont systemFontOfSize:15];
-    config.itemNormalColor = [UIColor lightGrayColor];
-    config.itemSelectColor = [UIColor redColor];
-    config.indicatorColor = [UIColor redColor];
-    config.indicatorHeight = 2;
-    config.indicatorExtraW = 10;
+    return [[TKSegmentConfig alloc] init];
+}
+
+/** 用于标识选项卡的指示器颜色 */
+- (UIColor *)indicatorColor {
+    if (!_indicatorColor) {
+        _indicatorColor = [UIColor redColor];
+    }
+    return _indicatorColor;
+}
+
+- (CGFloat)indicatorHeight {
+    if (_indicatorHeight <= 0) {
+        _indicatorHeight = 2;
+    }
+    return _indicatorHeight;
+}
+
+/** 选项颜色(普通) */
+-(UIColor *)segNormalColor {
+    if (!_segNormalColor) {
+        _segNormalColor = [UIColor grayColor];
+    }
+    return _segNormalColor;
+}
+
+/** 选项颜色(选中) */
+-(UIColor *)segSelectedColor {
+    if (!_segSelectedColor) {
+        _segSelectedColor = [UIColor redColor];
+    }
+    return _segSelectedColor;
+}
+
+/** 选项字体(普通) */
+- (UIFont *)segNormalFont {
+    if (!_segNormalFont) {
+        _segNormalFont = [UIFont systemFontOfSize:12];
+    }
+    return _segNormalFont;
+}
+
+/** 选项字体(选中) */
+- (UIFont *)segSelectedFont {
+    if (!_segSelectedFont) {
+        _segSelectedFont = [UIFont systemFontOfSize:12];
+    }
+    return _segSelectedFont;
     
-    return config;
+}
+
+/** 选项卡之间的最小间距 */
+- (CGFloat)limitMargin {
+    if (_limitMargin <= 0) {
+        _limitMargin = 25;
+    }
+    
+    return _limitMargin;
 }
 
 - (TKSegmentConfig *(^)(UIColor *))itemNC {
     return ^(UIColor *color){
-        self.itemNormalColor = color;
+        self.segNormalColor = color;
         return self;
     };
 }
 
 - (TKSegmentConfig *(^)(UIColor *))itemSC {
     return ^(UIColor *color){
-        self.itemSelectColor = color;
+        self.segSelectedColor = color;
         return self;
     };
 }

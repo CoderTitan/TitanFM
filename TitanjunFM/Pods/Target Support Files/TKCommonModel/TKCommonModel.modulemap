@@ -1,0 +1,6 @@
+framework module TKCommonModel {
+  umbrella header "TKCommonModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,6 +9,12 @@
 #import "UIImage+Image.h"
 
 @implementation UIImage (Image)
++ (UIImage *)bundleImageWithClass:(Class)clas Name: (NSString *)name {
+    NSBundle *currentBundle = [NSBundle bundleForClass:[clas class]];
+    NSString *bundleName = [currentBundle.infoDictionary[@"CFBundleName"] stringByAppendingString:@".bundle"];
+    NSString *path = [currentBundle pathForResource:name ofType:nil inDirectory:bundleName];
+    return [UIImage imageWithContentsOfFile:path];;
+}
 
 + (UIImage *)originImageWithName: (NSString *)name {
     

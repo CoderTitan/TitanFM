@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ftz-sS-sfI" customClass="TKRadioCategoryView">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lF4-Fb-PQJ" customClass="TKRadioButton">
+                    <rect key="frame" x="0.0" y="0.0" width="84" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="FYw-xt-4hv"/>
+                    </constraints>
+                    <state key="normal" title="本地台" image="TKHomeMoudle.bundle/icon_radio_local">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="localRadio:" destination="Ftz-sS-sfI" eventType="touchUpInside" id="1cB-P8-Ogf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZp-ae-fX3" customClass="TKRadioButton">
+                    <rect key="frame" x="84" y="0.0" width="83.5" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="78c-ss-1h7"/>
+                    </constraints>
+                    <state key="normal" title="国家台" image="TKHomeMoudle.bundle/icon_radio_country">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="nationalAction:" destination="Ftz-sS-sfI" eventType="touchUpInside" id="KPC-Yk-oo0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6J-fK-gPY" customClass="TKRadioButton">
+                    <rect key="frame" x="167.5" y="0.0" width="84" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="3bE-Ip-dGF"/>
+                    </constraints>
+                    <state key="normal" title="省市台" image="TKHomeMoudle.bundle/icon_radio_province">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="prianceAction:" destination="Ftz-sS-sfI" eventType="touchUpInside" id="izI-bq-db8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBc-Qx-xeU" customClass="TKRadioButton">
+                    <rect key="frame" x="251.5" y="0.0" width="83.5" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="y8y-vU-r1G"/>
+                    </constraints>
+                    <state key="normal" title="网络台" image="TKHomeMoudle.bundle/icon_radio_internet">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="networkAction:" destination="Ftz-sS-sfI" eventType="touchUpInside" id="X3O-EG-04w"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="V4L-zk-ShA">
+                    <rect key="frame" x="8" y="78" width="319" height="102"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PmM-iN-wS4">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PBc-Qx-xeU" firstAttribute="leading" secondItem="g6J-fK-gPY" secondAttribute="trailing" id="00b-nA-Mdx"/>
+                <constraint firstItem="g6J-fK-gPY" firstAttribute="top" secondItem="Ftz-sS-sfI" secondAttribute="top" id="2Rm-np-Fet"/>
+                <constraint firstAttribute="trailing" secondItem="PBc-Qx-xeU" secondAttribute="trailing" id="81h-rI-JPe"/>
+                <constraint firstItem="PBc-Qx-xeU" firstAttribute="height" secondItem="lF4-Fb-PQJ" secondAttribute="height" id="9Tr-Mp-DQL"/>
+                <constraint firstItem="lF4-Fb-PQJ" firstAttribute="top" secondItem="Ftz-sS-sfI" secondAttribute="top" id="EZu-3U-fXG"/>
+                <constraint firstItem="RZp-ae-fX3" firstAttribute="top" secondItem="Ftz-sS-sfI" secondAttribute="top" id="Eye-Xk-0pb"/>
+                <constraint firstItem="RZp-ae-fX3" firstAttribute="leading" secondItem="lF4-Fb-PQJ" secondAttribute="trailing" id="GSt-kY-hK6"/>
+                <constraint firstItem="V4L-zk-ShA" firstAttribute="top" secondItem="PBc-Qx-xeU" secondAttribute="bottom" constant="8" id="MCS-gQ-3bg"/>
+                <constraint firstItem="RZp-ae-fX3" firstAttribute="height" secondItem="lF4-Fb-PQJ" secondAttribute="height" id="Qcg-HE-dmF"/>
+                <constraint firstItem="g6J-fK-gPY" firstAttribute="height" secondItem="lF4-Fb-PQJ" secondAttribute="height" id="THf-Ve-LVe"/>
+                <constraint firstItem="g6J-fK-gPY" firstAttribute="leading" secondItem="RZp-ae-fX3" secondAttribute="trailing" id="Zdc-co-2Cv"/>
+                <constraint firstItem="PBc-Qx-xeU" firstAttribute="top" secondItem="Ftz-sS-sfI" secondAttribute="top" id="cQN-P2-Ay1"/>
+                <constraint firstItem="lF4-Fb-PQJ" firstAttribute="leading" secondItem="Ftz-sS-sfI" secondAttribute="leading" id="e7k-je-AVD"/>
+                <constraint firstItem="PBc-Qx-xeU" firstAttribute="width" secondItem="lF4-Fb-PQJ" secondAttribute="width" id="fNF-1E-T30"/>
+                <constraint firstItem="RZp-ae-fX3" firstAttribute="width" secondItem="lF4-Fb-PQJ" secondAttribute="width" id="hAH-P2-FkA"/>
+                <constraint firstAttribute="bottom" secondItem="V4L-zk-ShA" secondAttribute="bottom" constant="8" id="o1D-hP-qwH"/>
+                <constraint firstItem="g6J-fK-gPY" firstAttribute="width" secondItem="lF4-Fb-PQJ" secondAttribute="width" id="oWd-Ks-uBu"/>
+                <constraint firstAttribute="trailing" secondItem="V4L-zk-ShA" secondAttribute="trailing" constant="8" id="rAo-1d-Bxm"/>
+                <constraint firstItem="V4L-zk-ShA" firstAttribute="leading" secondItem="Ftz-sS-sfI" secondAttribute="leading" constant="8" id="vas-hc-tLS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="V4L-zk-ShA" id="5Oi-a7-IZc"/>
+            </connections>
+            <point key="canvasLocation" x="90.400000000000006" y="9.8950524737631191"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="TKHomeMoudle.bundle/icon_radio_country" width="16" height="16"/>
+        <image name="TKHomeMoudle.bundle/icon_radio_internet" width="16" height="16"/>
+        <image name="TKHomeMoudle.bundle/icon_radio_local" width="16" height="16"/>
+        <image name="TKHomeMoudle.bundle/icon_radio_province" width="16" height="16"/>
+    </resources>
+</document>

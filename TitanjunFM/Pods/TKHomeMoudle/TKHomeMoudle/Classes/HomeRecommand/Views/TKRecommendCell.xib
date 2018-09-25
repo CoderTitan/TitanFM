@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="yvQ-dk-DT5" customClass="TKRecommendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yvQ-dk-DT5" id="UZg-SZ-WXo">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eau-5Z-l7y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TKHomeMoudle.bundle/liveRadioCellPoint" translatesAutoresizingMaskIntoConstraints="NO" id="KtM-2K-d2X">
+                                <rect key="frame" x="11" y="12.5" width="10" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="RTu-GJ-ew5"/>
+                                    <constraint firstAttribute="width" constant="10" id="rky-8y-ckv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小编推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W5-fL-j9j">
+                                <rect key="frame" x="26" y="9" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJP-zW-ZeG">
+                                <rect key="frame" x="275" y="3.5" width="35" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="更多&gt;">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moreAction:" destination="yvQ-dk-DT5" eventType="touchUpInside" id="QFd-bx-qpb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0W5-fL-j9j" firstAttribute="centerY" secondItem="Eau-5Z-l7y" secondAttribute="centerY" id="2QI-EX-a5s"/>
+                            <constraint firstItem="KtM-2K-d2X" firstAttribute="leading" secondItem="Eau-5Z-l7y" secondAttribute="leadingMargin" constant="3" id="3pP-tN-UML"/>
+                            <constraint firstItem="tJP-zW-ZeG" firstAttribute="centerY" secondItem="Eau-5Z-l7y" secondAttribute="centerY" id="HK6-TD-Drz"/>
+                            <constraint firstAttribute="height" constant="35" id="La3-lc-ZmH"/>
+                            <constraint firstItem="0W5-fL-j9j" firstAttribute="leading" secondItem="KtM-2K-d2X" secondAttribute="trailing" constant="5" id="YXc-5A-elq"/>
+                            <constraint firstAttribute="trailing" secondItem="tJP-zW-ZeG" secondAttribute="trailing" constant="10" id="pSF-qw-ENs"/>
+                            <constraint firstItem="KtM-2K-d2X" firstAttribute="centerY" secondItem="Eau-5Z-l7y" secondAttribute="centerY" id="zDm-Cb-eRS"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2ja-6G-0no">
+                        <rect key="frame" x="0.0" y="35" width="320" height="114.5"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xXa-3C-mtw">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="yvQ-dk-DT5" id="g6i-ZD-AoY"/>
+                            <outlet property="delegate" destination="yvQ-dk-DT5" id="wFs-WE-EPK"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2ja-6G-0no" firstAttribute="top" secondItem="Eau-5Z-l7y" secondAttribute="bottom" id="0lr-ED-jhK"/>
+                    <constraint firstAttribute="trailing" secondItem="2ja-6G-0no" secondAttribute="trailing" id="GcN-jE-slg"/>
+                    <constraint firstItem="Eau-5Z-l7y" firstAttribute="top" secondItem="UZg-SZ-WXo" secondAttribute="top" id="TYT-VS-eXP"/>
+                    <constraint firstAttribute="trailing" secondItem="Eau-5Z-l7y" secondAttribute="trailing" id="aVz-cc-flb"/>
+                    <constraint firstItem="Eau-5Z-l7y" firstAttribute="leading" secondItem="UZg-SZ-WXo" secondAttribute="leading" id="jDZ-gS-kbG"/>
+                    <constraint firstAttribute="bottom" secondItem="2ja-6G-0no" secondAttribute="bottom" id="uSj-eL-EBT"/>
+                    <constraint firstItem="2ja-6G-0no" firstAttribute="leading" secondItem="UZg-SZ-WXo" secondAttribute="leading" id="xWx-ma-dqf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="2ja-6G-0no" id="faE-09-tqT"/>
+                <outlet property="flowLayout" destination="xXa-3C-mtw" id="1l6-ez-hnb"/>
+                <outlet property="titleLabel" destination="0W5-fL-j9j" id="uUX-6R-KCZ"/>
+            </connections>
+            <point key="canvasLocation" x="267" y="165"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TKHomeMoudle.bundle/liveRadioCellPoint" width="16" height="16"/>
+    </resources>
+</document>
