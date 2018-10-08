@@ -156,6 +156,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/TKSegmentBar/TKSegmentBar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TKSqliteTool/TKSqliteTool.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TitanFMBase/TitanFMBase.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TitanFMMine/TitanFMMine.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ADPictureView/ADPictureView.framework"
@@ -171,6 +172,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/TKSegmentBar/TKSegmentBar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TKSqliteTool/TKSqliteTool.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TitanFMBase/TitanFMBase.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TitanFMMine/TitanFMMine.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

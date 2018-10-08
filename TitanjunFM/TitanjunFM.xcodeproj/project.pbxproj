@@ -368,6 +368,7 @@
 				"${BUILT_PRODUCTS_DIR}/TKSegmentBar/TKSegmentBar.framework",
 				"${BUILT_PRODUCTS_DIR}/TKSqliteTool/TKSqliteTool.framework",
 				"${BUILT_PRODUCTS_DIR}/TitanFMBase/TitanFMBase.framework",
+				"${BUILT_PRODUCTS_DIR}/TitanFMMine/TitanFMMine.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -384,6 +385,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKSegmentBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKSqliteTool.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TitanFMBase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TitanFMMine.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

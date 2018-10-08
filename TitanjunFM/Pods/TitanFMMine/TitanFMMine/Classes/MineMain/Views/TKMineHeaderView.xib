@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Kox-mm-Lo8" customClass="TKMineHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitanFMMine.bundle/mineHeaderBg" translatesAutoresizingMaskIntoConstraints="NO" id="XyG-um-Jj5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEi-Ca-tsF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitanFMMine.bundle/iconImage" translatesAutoresizingMaskIntoConstraints="NO" id="bZc-3v-JEs">
+                            <rect key="frame" x="147.5" y="40" width="80" height="80"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="i0u-wM-7D3"/>
+                                <constraint firstAttribute="height" constant="80" id="obL-rU-B5t"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhj-QR-OzO">
+                            <rect key="frame" x="196" y="246" width="103" height="34"/>
+                            <color key="backgroundColor" red="1" green="0.4545210033" blue="0.35445333600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="录音"/>
+                            <connections>
+                                <action selector="recordClick:" destination="Kox-mm-Lo8" eventType="touchUpInside" id="Jp9-bP-rf4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dx3-GX-JJZ">
+                            <rect key="frame" x="76" y="246" width="103" height="34"/>
+                            <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="MNy-I0-tJT"/>
+                                <constraint firstAttribute="width" constant="103" id="lz8-PZ-jlo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="节目管理"/>
+                            <connections>
+                                <action selector="programMangeClick:" destination="Kox-mm-Lo8" eventType="touchUpInside" id="Lkt-kU-ECr"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关注 999  |  粉丝 999万" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9x-VT-0hN">
+                            <rect key="frame" x="0.0" y="165" width="375" height="21"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="4bC-Xo-KKt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoderTitan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETb-Dp-9Sn">
+                            <rect key="frame" x="0.0" y="130" width="375" height="25"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="8Fi-dJ-TVM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPu-bG-OAw">
+                            <rect key="frame" x="8" y="21" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="XcN-SY-GZd"/>
+                                <constraint firstAttribute="height" constant="30" id="viG-Ve-UG9"/>
+                            </constraints>
+                            <state key="normal" image="TitanFMMine.bundle/icon_setting"/>
+                            <connections>
+                                <action selector="settingClick:" destination="Kox-mm-Lo8" eventType="touchUpInside" id="DBi-N2-wL8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ETb-Dp-9Sn" secondAttribute="trailing" id="4bJ-PL-clO"/>
+                        <constraint firstItem="xPu-bG-OAw" firstAttribute="leading" secondItem="qEi-Ca-tsF" secondAttribute="leading" constant="8" id="5ga-eh-FvI"/>
+                        <constraint firstItem="ETb-Dp-9Sn" firstAttribute="leading" secondItem="qEi-Ca-tsF" secondAttribute="leading" id="8Tu-9O-tN9"/>
+                        <constraint firstAttribute="height" constant="300" id="D68-eg-bil"/>
+                        <constraint firstItem="nhj-QR-OzO" firstAttribute="height" secondItem="dx3-GX-JJZ" secondAttribute="height" id="IBD-Va-RG1"/>
+                        <constraint firstItem="ETb-Dp-9Sn" firstAttribute="top" secondItem="bZc-3v-JEs" secondAttribute="bottom" constant="10" id="OdX-Eq-9wk"/>
+                        <constraint firstItem="s9x-VT-0hN" firstAttribute="top" secondItem="ETb-Dp-9Sn" secondAttribute="bottom" constant="10" id="PPK-pP-thU"/>
+                        <constraint firstItem="bZc-3v-JEs" firstAttribute="centerX" secondItem="qEi-Ca-tsF" secondAttribute="centerX" id="RC4-zQ-OW3"/>
+                        <constraint firstItem="s9x-VT-0hN" firstAttribute="leading" secondItem="qEi-Ca-tsF" secondAttribute="leading" id="ana-l0-nA4"/>
+                        <constraint firstItem="dx3-GX-JJZ" firstAttribute="centerX" secondItem="bZc-3v-JEs" secondAttribute="centerX" constant="-60" id="awl-Fd-G12"/>
+                        <constraint firstItem="xPu-bG-OAw" firstAttribute="top" secondItem="qEi-Ca-tsF" secondAttribute="top" constant="21" id="fyv-No-MTg"/>
+                        <constraint firstItem="nhj-QR-OzO" firstAttribute="centerX" secondItem="bZc-3v-JEs" secondAttribute="centerX" constant="60" id="ifd-GL-2Wk"/>
+                        <constraint firstAttribute="bottom" secondItem="dx3-GX-JJZ" secondAttribute="bottom" constant="20" id="kRR-jM-iXY"/>
+                        <constraint firstItem="nhj-QR-OzO" firstAttribute="width" secondItem="dx3-GX-JJZ" secondAttribute="width" id="qtY-Nv-GIG"/>
+                        <constraint firstItem="bZc-3v-JEs" firstAttribute="top" secondItem="qEi-Ca-tsF" secondAttribute="top" constant="40" id="rLT-GM-bLD"/>
+                        <constraint firstItem="nhj-QR-OzO" firstAttribute="bottom" secondItem="dx3-GX-JJZ" secondAttribute="bottom" id="rNe-FY-Iv8"/>
+                        <constraint firstAttribute="trailing" secondItem="s9x-VT-0hN" secondAttribute="trailing" id="vLM-zq-7CX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XyG-um-Jj5" firstAttribute="leading" secondItem="Kox-mm-Lo8" secondAttribute="leading" id="5ec-53-Kq6"/>
+                <constraint firstAttribute="bottom" secondItem="XyG-um-Jj5" secondAttribute="bottom" id="BDe-1l-8sd"/>
+                <constraint firstItem="qEi-Ca-tsF" firstAttribute="leading" secondItem="Kox-mm-Lo8" secondAttribute="leading" id="Ghy-D9-Qte"/>
+                <constraint firstAttribute="bottom" secondItem="qEi-Ca-tsF" secondAttribute="bottom" id="WUZ-k5-R74"/>
+                <constraint firstAttribute="trailing" secondItem="qEi-Ca-tsF" secondAttribute="trailing" id="Z0R-b3-bGk"/>
+                <constraint firstAttribute="trailing" secondItem="XyG-um-Jj5" secondAttribute="trailing" id="p3e-aw-fkh"/>
+                <constraint firstItem="XyG-um-Jj5" firstAttribute="top" secondItem="Kox-mm-Lo8" secondAttribute="top" id="ycK-5G-28J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="bZc-3v-JEs" id="Tb8-A9-a4D"/>
+            </connections>
+            <point key="canvasLocation" x="596.5" y="733"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="TitanFMMine.bundle/iconImage" width="16" height="16"/>
+        <image name="TitanFMMine.bundle/icon_setting" width="16" height="16"/>
+        <image name="TitanFMMine.bundle/mineHeaderBg" width="16" height="16"/>
+    </resources>
+</document>

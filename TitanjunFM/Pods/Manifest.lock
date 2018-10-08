@@ -42,6 +42,8 @@ PODS:
     - SDWebImage
     - TitanFMBase/Category
   - TitanFMBase/Tools (0.1.0)
+  - TitanFMMine (0.3.0):
+    - TitanFMBase
   - TKCommonModel (0.1.1):
     - ADPictureView
   - TKDownloadPlayer (0.2.3):
@@ -90,12 +92,14 @@ PODS:
 
 DEPENDENCIES:
   - DownLoadListen
+  - TitanFMMine
   - TKHomeMain
   - TKMainMoudle
 
 SPEC REPOS:
   https://git.coding.net/CoderTitan/TitanjunSpec.git:
     - DownLoadListen
+    - TitanFMMine
     - TKCommonModel
     - TKDownloadPlayer
     - TKHomeMain
@@ -117,6 +121,7 @@ SPEC CHECKSUMS:
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   TitanFMBase: a4049b2cd12e7f54cc0b58e2d7538431fc6d4c2d
+  TitanFMMine: abbff590b3eff1263086312c55f05045bc576aba
   TKCommonModel: e75f3a0ecd0d2023122703f925217c3ed3bc423d
   TKDownloadPlayer: 51e084f18f5d94a76131ecb7e33b886f8502a251
   TKHomeMain: e3a83a31affea00ed213ac021ec332239dd212c0
@@ -125,6 +130,6 @@ SPEC CHECKSUMS:
   TKSegmentBar: 7a57817b2b1bcc68b504747660936892e741ee89
   TKSqliteTool: 39e521e85b6fb3a9770b180dbaf66928e5b9fb0b
 
-PODFILE CHECKSUM: 9b828f540a50c6249ed7c091d93f50cd901d2a58
+PODFILE CHECKSUM: 4e24403475dd5089c61ab54f77f23724bafcd371
 
 COCOAPODS: 1.5.3

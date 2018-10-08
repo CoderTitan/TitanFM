@@ -13,6 +13,7 @@ target 'TitanjunFM' do
   pod 'TKMainMoudle'
   pod 'DownLoadListen'
   pod 'TKHomeMain'
+  pod 'TitanFMMine'
 
 
 

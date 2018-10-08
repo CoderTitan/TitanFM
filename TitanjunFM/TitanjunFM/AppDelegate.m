@@ -13,6 +13,7 @@
 #import "DownLoadMainController.h"
 #import "SecondViewController.h"
 #import "LastViewController.h"
+#import "TKMineTableController.h"
 
 @interface AppDelegate ()
 
@@ -26,7 +27,7 @@
     [MainModuleAPI addChildVC:[TKHomeMoudleAPI shareInstance].homeVC normalImageName:@"tabbar_find_n" selectedImageName:@"tabbar_find_h" isRequiredNavController:YES];
     [MainModuleAPI addChildVC:[SecondViewController new] normalImageName:@"tabbar_sound_n" selectedImageName:@"tabbar_sound_h" isRequiredNavController:YES];
     [MainModuleAPI addChildVC:[[DownLoadMainController alloc] init] normalImageName:@"tabbar_download_n" selectedImageName:@"tabbar_download_h" isRequiredNavController:YES];
-    [MainModuleAPI addChildVC:[LastViewController new] normalImageName:@"tabbar_me_n" selectedImageName:@"tabbar_me_h" isRequiredNavController:YES];
+    [MainModuleAPI addChildVC:[TKMineTableController new] normalImageName:@"tabbar_me_n" selectedImageName:@"tabbar_me_h" isRequiredNavController:YES];
     
     [MainModuleAPI setTabbarMiddleBtnClick:^(BOOL isPlaying) {
         if (isPlaying) {
